@@ -21,8 +21,16 @@
 
 .title h1 {
   color: rgb(27, 27, 27);
-  font-weight: normal;
+  font-weight: 500;
 }
 
+.title p {
+  color: rgb(28, 85, 184);
+}
+
+.title .social {
+  margin-top: 20px;
+}
 .download {
+  display: flex;
 }
