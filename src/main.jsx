@@ -7,7 +7,7 @@ import "./index.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <div>
-      <Background />
+      <Background num="60" />
       <div className="context">
         <Content />
       </div>
