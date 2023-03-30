@@ -5,6 +5,11 @@ import "./main.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Content />
+    <div>
+      <Background />
+      <div>
+        <Content />
+      </div>
+    </div>
   </React.StrictMode>
 );
