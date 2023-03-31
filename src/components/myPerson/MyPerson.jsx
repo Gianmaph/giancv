@@ -1,7 +1,7 @@
 import "./myPerson.css";
 import { useEffect, useState } from "react";
 
-const MyPerson = () => {
+const MyPerson = ({ settings }) => {
   const [text, setText] = useState("Electronic Engineer");
   const sleepSync = (ms) => {
     const end = new Date().getTime() + ms;
@@ -32,7 +32,9 @@ const MyPerson = () => {
         <img src="./foto.jpg" alt="ProfilePhoto" />
       </div>
       <div className="title">
-        <h1>Gianmarco Cricchio</h1>
+        <h1>
+          {settings.name} {settings.subname}
+        </h1>
         <p className="sub">{text}</p>
         <div className="social">
           <a
