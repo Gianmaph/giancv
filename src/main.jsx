@@ -1,16 +1,30 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Content from "./components/content/Content";
-import Background from "./components/background/Background";
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
+import Background from "./components/background/Background";
+import Content from "./components/content/Content";
+import Settings from "./components/settings";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Content />,
+  },
+  {
+    path: "/settings",
+    element: <Settings />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <div>
+    <>
       <Background num="50" />
       <div className="context">
-        <Content />
+        <RouterProvider router={router} />
       </div>
-    </div>
+    </>
   </React.StrictMode>
 );

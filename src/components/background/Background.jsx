@@ -1,14 +1,21 @@
+import { useEffect, useState } from "react";
 import "./background.css";
 const Background = ({ num }) => {
-  const rows = [];
-  for (let i = 0; i < num; i++) {
-    rows.push(i);
-  }
+  const [test, setTest] = useState([]);
+
+  useEffect(() => {
+    const rows = [];
+    for (let i = 0; i < num; i++) {
+      rows.push(i);
+    }
+    setTest(rows);
+  }, []);
+
   return (
     <div>
       <div className="area">
         <ul className="circles">
-          {rows.map((item) => (
+          {test.map(item => (
             <li key={item}></li>
           ))}
         </ul>
