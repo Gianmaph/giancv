@@ -8,23 +8,23 @@ const MyPerson = ({ settings }) => {
     while (new Date().getTime() < end) {}
   };
 
-  useEffect(() => {
-    // let sub = document.querySelector(".sub");
-    // sub.style.opacity = 100;
-    // sleepSync(500);
-    // const timer = setTimeout(() => {
-    //   if (text === "Electronic Engineer") {
-    //     setText("Embedded System Developer");
-    //     sub.style.opacity = 0;
-    //     sleepSync(500);
-    //   } else {
-    //     setText("Electronic Engineer");
-    //     sub.style.opacity = 0;
-    //     sleepSync(500);
-    //   }
-    // }, 1000);
-    // return () => clearTimeout(timer);
-  });
+  // useEffect(() => {
+  // let sub = document.querySelector(".sub");
+  // sub.style.opacity = 100;
+  // sleepSync(500);
+  // const timer = setTimeout(() => {
+  //   if (text === "Electronic Engineer") {
+  //     setText("Embedded System Developer");
+  //     sub.style.opacity = 0;
+  //     sleepSync(500);
+  //   } else {
+  //     setText("Electronic Engineer");
+  //     sub.style.opacity = 0;
+  //     sleepSync(500);
+  //   }
+  // }, 1000);
+  // return () => clearTimeout(timer);
+  // });
 
   return (
     <div className="myperson">
@@ -52,7 +52,8 @@ const MyPerson = ({ settings }) => {
         </div>
       </div>
       <div className="download">
-        <button>DOWNLOAD CV</button> <button>CONTACT ME</button>
+        <button className=".mbutton">DOWNLOAD CV</button>{" "}
+        <button className=".mbutton">CONTACT ME</button>
       </div>
     </div>
   );

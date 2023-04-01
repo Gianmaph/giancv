@@ -45,11 +45,11 @@
   transition: all 0.2s;
 }
 
-button:hover {
+.mbutton:hover {
   font-size: 1.25rem;
 }
 
-button {
+.mbutton {
   border: 0;
   font-size: 1.2rem;
   font-weight: 600;
