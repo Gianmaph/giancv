@@ -9,21 +9,21 @@ const MyPerson = ({ settings }) => {
   };
 
   useEffect(() => {
-    let sub = document.querySelector(".sub");
-    sub.style.opacity = 100;
-    sleepSync(500);
-    const timer = setTimeout(() => {
-      if (text === "Electronic Engineer") {
-        setText("Embedded System Developer");
-        sub.style.opacity = 0;
-        sleepSync(500);
-      } else {
-        setText("Electronic Engineer");
-        sub.style.opacity = 0;
-        sleepSync(500);
-      }
-    }, 1000);
-    return () => clearTimeout(timer);
+    // let sub = document.querySelector(".sub");
+    // sub.style.opacity = 100;
+    // sleepSync(500);
+    // const timer = setTimeout(() => {
+    //   if (text === "Electronic Engineer") {
+    //     setText("Embedded System Developer");
+    //     sub.style.opacity = 0;
+    //     sleepSync(500);
+    //   } else {
+    //     setText("Electronic Engineer");
+    //     sub.style.opacity = 0;
+    //     sleepSync(500);
+    //   }
+    // }, 1000);
+    // return () => clearTimeout(timer);
   });
 
   return (
