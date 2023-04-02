@@ -60,7 +60,13 @@ const Settings = () => {
   return (
     <div className={styles.main}>
       <div className={styles.settings}>
-        <h1 className={styles.title}>Edit Profile</h1>
+        <div className={styles.header}>
+          <h1 className={styles.title}>Edit Profile</h1>
+          <nav>
+            <button className={styles.button}>User info</button>
+            <button className={styles.button}>Work info</button>
+          </nav>
+        </div>
         <div className={styles.userinfo}>
           <form onSubmit={handleForm}>
             <div className={styles.section}>

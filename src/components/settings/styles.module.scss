@@ -6,7 +6,6 @@
   height: 100vh;
   width: 100vw;
   .settings {
-    padding: 40px;
     width: 900px;
     height: 900px;
     background: #f5f5f5;
@@ -14,11 +13,40 @@
     box-shadow: 0 0 5px black;
     display: flex;
     flex-direction: column;
-    .title {
-      font-size: 35px;
-      font-weight: 600;
+    .header {
+      height: 250px;
+      background-color: #eeecec;
+      border-bottom: 0.2px solid rgba(0, 0, 0, 0.182);
+      padding: 50px 0px 0px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .title {
+        margin-left: 12px;
+        font-size: 35px;
+        font-weight: 600;
+      }
+      nav {
+        display: flex;
+        gap: 15px;
+        .button:hover {
+          cursor: pointer;
+        }
+        .button {
+          border: none;
+          transition: all 0.2s;
+          background-color: #eeecec;
+          font-size: 1.05rem;
+          border-bottom: 3px solid rgba(0, 81, 255, 0.788);
+          padding: 10px 12px 10px 12px;
+          font-weight: 600;
+          color: #303030;
+        }
+      }
     }
     .userinfo {
+      padding: 40px;
+      display: block;
       .button:hover {
         background-color: rgb(53, 124, 255);
       }
@@ -27,8 +55,8 @@
         color: white;
         font-weight: 600;
         font-size: 1.2rem;
-        border-radius: 30px;
-        padding: 10px 30px 10px 30px;
+        border-radius: 20px;
+        padding: 8px 30px 8px 30px;
         border: 0;
         margin: 15px;
         cursor: pointer;
