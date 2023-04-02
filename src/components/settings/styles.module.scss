@@ -14,48 +14,51 @@
     box-shadow: 0 0 5px black;
     display: flex;
     flex-direction: column;
-    .button:hover {
-      background-color: rgb(53, 124, 255);
-    }
-    .button {
-      background-color: rgba(53, 124, 255, 0.76);
-      color: white;
-      font-weight: 600;
-      font-size: 1.2rem;
-      border-radius: 30px;
-      padding: 15px 30px 15px 30px;
-      border: 0;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
     .title {
       font-size: 35px;
       font-weight: 600;
     }
-    .section {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      .subsection {
-        width: 50vw;
+    .userinfo {
+      .button:hover {
+        background-color: rgb(53, 124, 255);
+      }
+      .button {
+        background-color: rgba(53, 124, 255, 0.76);
+        color: white;
+        font-weight: 600;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        padding: 10px 30px 10px 30px;
+        border: 0;
+        margin: 15px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .section {
         display: flex;
-        flex-direction: column;
-        padding: 15px;
-        gap: 35px;
-        .textbox {
-          p {
-            color: rgb(58, 59, 59);
-            font-weight: 500;
-            margin-left: 2px;
-          }
-          .box {
-            color: #353535;
-            font-weight: 600;
-            padding: 10px;
-            width: 100%;
-            border-radius: 6px;
-            height: 40px;
-            border: 1.8px solid rgba(163, 163, 163, 0.308);
+        justify-content: space-evenly;
+        align-items: center;
+        .subsection {
+          width: 50vw;
+          display: flex;
+          flex-direction: column;
+          padding: 15px;
+          gap: 35px;
+          .textbox {
+            p {
+              color: rgb(58, 59, 59);
+              font-weight: 500;
+              margin-left: 2px;
+            }
+            .box {
+              color: #353535;
+              font-weight: 600;
+              padding: 10px;
+              width: 100%;
+              border-radius: 5px;
+              height: 45px;
+              border: 1.8px solid rgba(163, 163, 163, 0.308);
+            }
           }
         }
       }

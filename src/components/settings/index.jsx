@@ -61,107 +61,109 @@ const Settings = () => {
     <div className={styles.main}>
       <div className={styles.settings}>
         <h1 className={styles.title}>Edit Profile</h1>
-        <form onSubmit={handleForm}>
-          <div className={styles.section}>
-            <div className={styles.subsection}>
-              <div className={styles.textbox}>
-                <p>Name</p>
-                <input
-                  className={styles.box}
-                  type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
+        <div className={styles.userinfo}>
+          <form onSubmit={handleForm}>
+            <div className={styles.section}>
+              <div className={styles.subsection}>
+                <div className={styles.textbox}>
+                  <p>Name</p>
+                  <input
+                    className={styles.box}
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
+                <div className={styles.textbox}>
+                  <p>Surname</p>
+                  <input
+                    className={styles.box}
+                    type="text"
+                    value={surname}
+                    onChange={(e) => setSurname(e.target.value)}
+                  />
+                </div>
+                <div className={styles.textbox}>
+                  <p>Age</p>
+                  <input
+                    className={styles.box}
+                    type="text"
+                    value={age}
+                    onChange={(e) => setAge(e.target.value)}
+                  />
+                </div>
+                <div className={styles.textbox}>
+                  <p>Birth</p>
+                  <input
+                    className={styles.box}
+                    type="text"
+                    value={birth}
+                    onChange={(e) => setBirth(e.target.value)}
+                  />
+                </div>
+                <div className={styles.textbox}>
+                  <p>Email</p>
+                  <input
+                    className={styles.box}
+                    type="text"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
               </div>
-              <div className={styles.textbox}>
-                <p>Surname</p>
-                <input
-                  className={styles.box}
-                  type="text"
-                  value={surname}
-                  onChange={(e) => setSurname(e.target.value)}
-                />
-              </div>
-              <div className={styles.textbox}>
-                <p>Age</p>
-                <input
-                  className={styles.box}
-                  type="text"
-                  value={age}
-                  onChange={(e) => setAge(e.target.value)}
-                />
-              </div>
-              <div className={styles.textbox}>
-                <p>Birth</p>
-                <input
-                  className={styles.box}
-                  type="text"
-                  value={birth}
-                  onChange={(e) => setBirth(e.target.value)}
-                />
-              </div>
-              <div className={styles.textbox}>
-                <p>Email</p>
-                <input
-                  className={styles.box}
-                  type="text"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
+              <div className={styles.subsection}>
+                <div className={styles.textbox}>
+                  <p>Number</p>
+                  <input
+                    className={styles.box}
+                    type="text"
+                    value={number}
+                    onChange={(e) => setNumber(e.target.value)}
+                  />
+                </div>
+                <div className={styles.textbox}>
+                  <p>Country</p>
+                  <input
+                    className={styles.box}
+                    type="text"
+                    value={country}
+                    onChange={(e) => setCountry(e.target.value)}
+                  />
+                </div>
+                <div className={styles.textbox}>
+                  <p>City</p>
+                  <input
+                    className={styles.box}
+                    type="text"
+                    value={city}
+                    onChange={(e) => setCity(e.target.value)}
+                  />
+                </div>
+                <div className={styles.textbox}>
+                  <p>Cap</p>
+                  <input
+                    className={styles.box}
+                    type="text"
+                    value={cap}
+                    onChange={(e) => setCap(e.target.value)}
+                  />
+                </div>
+                <div className={styles.textbox}>
+                  <p>Address</p>
+                  <input
+                    className={styles.box}
+                    type="text"
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
+                  />
+                </div>
               </div>
             </div>
-            <div className={styles.subsection}>
-              <div className={styles.textbox}>
-                <p>Number</p>
-                <input
-                  className={styles.box}
-                  type="text"
-                  value={number}
-                  onChange={(e) => setNumber(e.target.value)}
-                />
-              </div>
-              <div className={styles.textbox}>
-                <p>Country</p>
-                <input
-                  className={styles.box}
-                  type="text"
-                  value={country}
-                  onChange={(e) => setCountry(e.target.value)}
-                />
-              </div>
-              <div className={styles.textbox}>
-                <p>City</p>
-                <input
-                  className={styles.box}
-                  type="text"
-                  value={city}
-                  onChange={(e) => setCity(e.target.value)}
-                />
-              </div>
-              <div className={styles.textbox}>
-                <p>Cap</p>
-                <input
-                  className={styles.box}
-                  type="text"
-                  value={cap}
-                  onChange={(e) => setCap(e.target.value)}
-                />
-              </div>
-              <div className={styles.textbox}>
-                <p>Address</p>
-                <input
-                  className={styles.box}
-                  type="text"
-                  value={address}
-                  onChange={(e) => setAddress(e.target.value)}
-                />
-              </div>
-            </div>
-          </div>
-          <button className={styles.button} type="submit">
-            Update info
-          </button>
-        </form>
+            <button className={styles.button} type="submit">
+              Update info
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
