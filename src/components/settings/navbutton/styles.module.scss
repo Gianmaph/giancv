@@ -1,0 +1,25 @@
+.buttonActive:hover {
+  cursor: pointer;
+}
+.buttonActive {
+  border: none;
+  transition: all 0.2s;
+  background-color: #eeecec;
+  font-size: 1.05rem;
+  border-bottom: 3px solid rgba(0, 81, 255, 0.788);
+  padding: 10px 12px 10px 12px;
+  font-weight: 600;
+  color: #303030;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button {
+  border: none;
+  transition: all 0.2s;
+  background-color: #eeecec;
+  font-size: 1.05rem;
+  padding: 10px 12px 10px 12px;
+  font-weight: 600;
+  color: #3030309c;
+}
