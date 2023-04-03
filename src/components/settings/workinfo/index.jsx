@@ -34,9 +34,23 @@ const Workinfo = ({ select }) => {
     <div className={select ? styles.workinfo : styles.noworkinfo}>
       {data.map((i) => (
         <div className={styles.section} key={i}>
-          {i.img != "" ? <img src={i.img} alt="" /> : null}
-          {i.activities != "" ? <p>{i.activities}</p> : null}
-          <div className={styles.selection}></div>
+          <div className={styles.imgSection}>
+            <div className={styles.order}>{i.id}</div>
+            <div className={styles.content}>
+              <p className={styles.title}>{i.company}</p>
+              {i.img != "" ? (
+                <img className={styles.jobImg} src={i.img} alt="" />
+              ) : null}
+            </div>
+          </div>
+          <div className={styles.infoContent}>
+            {i.activities != "" ? <p>{i.activities}</p> : null}
+          </div>
+          <div className={styles.selection}>
+            <img className={styles.selImg} src="./edit.png" alt="edit" />
+            <hr />
+            <img className={styles.selImg} src="./delete.png" alt="edit" />
+          </div>
         </div>
       ))}
     </div>
