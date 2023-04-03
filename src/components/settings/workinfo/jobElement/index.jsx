@@ -15,7 +15,9 @@ const JobElement = ({ data }) => {
             </div>
           </div>
           <div className={styles.infoContent}>
+            <p className={styles.title}>{i.role}</p>
             {i.activities != "" ? <p>{i.activities}</p> : null}
+            {i.goals != "" ? <p>{i.goals}</p> : null}
           </div>
           <div className={styles.selection}>
             <img className={styles.selImg} src="./edit.png" alt="edit" />

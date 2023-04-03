@@ -1,5 +1,6 @@
 .section {
   height: 130px;
+  gap: 20px;
   border-radius: 8px;
   border: 0.3px solid rgba(43, 43, 43, 0.267);
   display: flex;
@@ -27,7 +28,9 @@
       margin: 5px 0px 10px 10px;
       .title {
         font-size: 1.2rem;
-        font-weight: 500;
+        font-weight: 600;
+        color: rgb(0, 79, 170);
+        white-space: nowrap;
       }
       .jobImg {
         max-width: 90px;
@@ -36,8 +39,15 @@
     }
   }
   .infoContent {
+    margin-top: 5px;
+    height: 100%;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
     .title {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      font-weight: 600;
     }
   }
   .selection {
