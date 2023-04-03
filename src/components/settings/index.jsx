@@ -30,7 +30,7 @@ const Settings = () => {
     <div className={styles.main}>
       <div className={styles.settings}>
         <div className={styles.header}>
-          <h1 className={styles.title}>Edit Profile</h1>
+          <h1 className={styles.title}>Profile Settings</h1>
           <nav>
             <Navbutton
               text="User info"
