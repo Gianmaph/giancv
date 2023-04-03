@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import Navbutton from "./navbutton";
 import Userinfo from "./userinfo";
 import "../background/background.css";
+import Workinfo from "./workinfo";
 
 const Settings = () => {
   const [button1Select, setButton1Select] = useState(false);
@@ -44,6 +45,7 @@ const Settings = () => {
           </nav>
         </div>
         <Userinfo select={button1Select} />
+        <Workinfo select={button2Select} />
       </div>
     </div>
   );

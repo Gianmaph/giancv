@@ -1,0 +1,33 @@
+.noworkinfo {
+  display: none;
+}
+
+.workinfo {
+  padding: 20px;
+  display: block;
+  .section {
+    height: 130px;
+    border-radius: 8px;
+    border: 0.3px solid rgba(43, 43, 43, 0.267);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      max-width: 100px;
+      max-height: 100px;
+      margin-left: 10px;
+    }
+    .title {
+      font-size: 1.1rem;
+    }
+    .selection {
+      height: 100%;
+      width: 40px;
+      display: flex;
+      border-left: 0.3px solid rgba(43, 43, 43, 0.267);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
