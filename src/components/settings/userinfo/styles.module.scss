@@ -45,6 +45,10 @@
       padding: 15px;
       gap: 35px;
       width: 400px;
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
+
       .textbox {
         p {
           color: rgb(58, 59, 59);
@@ -59,58 +63,6 @@
           border-radius: 5px;
           height: 45px;
           border: 1.8px solid rgba(163, 163, 163, 0.308);
-        }
-      }
-    }
-    @media (max-width: 1000px) {
-      .subsection {
-        width: 50vw;
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        gap: 35px;
-        width: 300px;
-        .textbox {
-          p {
-            color: rgb(58, 59, 59);
-            font-weight: 500;
-            margin-left: 2px;
-          }
-          .box {
-            color: #353535;
-            font-weight: 600;
-            padding: 10px;
-            width: 100%;
-            border-radius: 5px;
-            height: 45px;
-            border: 1.8px solid rgba(163, 163, 163, 0.308);
-          }
-        }
-      }
-    }
-    @media (max-width: 750px) {
-      .subsection {
-        width: 50vw;
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        gap: 35px;
-        width: 400px;
-        .textbox {
-          p {
-            color: rgb(58, 59, 59);
-            font-weight: 500;
-            margin-left: 2px;
-          }
-          .box {
-            color: #353535;
-            font-weight: 600;
-            padding: 10px;
-            width: 100%;
-            border-radius: 5px;
-            height: 45px;
-            border: 1.8px solid rgba(163, 163, 163, 0.308);
-          }
         }
       }
     }
