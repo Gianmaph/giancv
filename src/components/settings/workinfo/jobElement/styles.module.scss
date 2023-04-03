@@ -1,0 +1,65 @@
+.section {
+  height: 130px;
+  border-radius: 8px;
+  border: 0.3px solid rgba(43, 43, 43, 0.267);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .imgSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    .order {
+      height: 100%;
+      width: 25px;
+      display: flex;
+      border-right: 0.3px solid rgba(43, 43, 43, 0.267);
+      justify-content: center;
+      align-items: center;
+      color: rgba(0, 0, 0, 0.938);
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 5px 0px 10px 10px;
+      .title {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+      .jobImg {
+        max-width: 90px;
+        max-height: 90px;
+      }
+    }
+  }
+  .infoContent {
+    .title {
+      font-size: 1.1rem;
+    }
+  }
+  .selection {
+    height: 100%;
+    width: 40px;
+    display: flex;
+    border-left: 0.3px solid rgba(43, 43, 43, 0.267);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    hr {
+      width: 24px;
+      border: 0.3px solid rgba(43, 43, 43, 0.267);
+    }
+    .selImg:hover {
+      width: 22px;
+      opacity: 70%;
+      cursor: pointer;
+    }
+    .selImg {
+      width: 22px;
+      opacity: 70%;
+    }
+  }
+}
