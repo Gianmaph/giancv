@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import Navbutton from "./navbutton";
 import Userinfo from "./userinfo";
+import "../background/background.css";
 
 const Settings = () => {
   const [button1Select, setButton1Select] = useState(false);
