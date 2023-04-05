@@ -34,6 +34,7 @@ const Workinfo = ({ select }) => {
   return (
     <div className={select ? styles.workinfo : styles.noworkinfo}>
       <JobElement data={data} />
+      <button className={styles.addButton}>ADD WORK</button>
     </div>
   );
 };

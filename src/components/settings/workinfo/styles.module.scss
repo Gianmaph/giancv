@@ -3,6 +3,28 @@
 }
 
 .workinfo {
+  height: 100%;
   padding: 20px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: scroll;
+  .addButton:hover {
+    background-color: rgb(53, 124, 255);
+  }
+  .addButton {
+    background-color: rgba(53, 124, 255, 0.76);
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    padding: 8px 30px 8px 30px;
+    border: 0;
+    margin: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
