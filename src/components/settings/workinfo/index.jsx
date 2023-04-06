@@ -53,7 +53,7 @@ const Workinfo = ({ select }) => {
         </button>
       </div>
       <div className={showJob ? styles.addJob : styles.noaddJob}>
-        <AddJob />
+        <AddJob back={addJob} />
       </div>
     </>
   );

@@ -16,3 +16,22 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.backButton:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.backButton {
+  transition: all 0.3s;
+  left: 20px;
+  position: absolute;
+  width: 23px;
+  background-color: transparent;
+  border: none;
+  opacity: 50%;
+  img {
+    height: 20px;
+    width: 23px;
+  }
+}
