@@ -1,11 +1,58 @@
+import { MainContext, reducerCount } from "../content/Content";
 import "./myPerson.css";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useReducer, useState } from "react";
 
 const MyPerson = ({ settings }) => {
+  const count = useContext(MainContext);
+
+  const [state, dispatch] = useReducer(reducerCount, count);
+
+  const [index, setIndex] = useState(0);
+
+  const [class1, setClass1] = useState(false);
+  const [class2, setClass2] = useState(false);
+  const [class3, setClass3] = useState(false);
+
   const [text, setText] = useState("Electronic Engineer");
-  const sleepSync = (ms) => {
+  const sleepSync = ms => {
     const end = new Date().getTime() + ms;
     while (new Date().getTime() < end) {}
+  };
+
+  const testi = ["ciao", "ciao2", "ciao3"];
+
+  useEffect(() => {
+    setTimeout(() => {
+      switch (index) {
+        case 0:
+          setClass1(true);
+          setClass2(false);
+          setClass3(false);
+          setIndex(index + 1);
+          break;
+        case 1:
+          setClass1(false);
+          setClass2(true);
+          setClass3(false);
+          setIndex(index + 1);
+          break;
+        case 2:
+          setClass1(false);
+          setClass2(false);
+          setClass3(true);
+          setIndex(0);
+          break;
+      }
+    }, 2000);
+    console.log("ciao");
+  }, [index]);
+
+  const incrementa = () => {
+    dispatch({ type: "incrementa" });
+  };
+
+  const testPayload = () => {
+    dispatch({ type: "test", payload: 10 });
   };
 
   // useEffect(() => {
@@ -29,6 +76,8 @@ const MyPerson = ({ settings }) => {
   return (
     <div className="myperson">
       <div className="profile-photo">
+        <button onClick={incrementa}>+</button>
+        <button onClick={testPayload}>aggiungi 10</button>
         <img src="./foto.jpg" alt="ProfilePhoto" />
       </div>
       <div className="title">
@@ -36,6 +85,9 @@ const MyPerson = ({ settings }) => {
           {settings.name} {settings.subname}
         </h1>
         <p className="sub">{text}</p>
+        <p className={`sub ${class1 ? "show" : ""}`}>{testi[0]}</p>
+        <p className={`sub ${class2 ? "show" : ""}`}>{testi[1]}</p>
+        <p className={`sub ${class3 ? "show" : ""}`}>{testi[2]}</p>
         <div className="social">
           <a
             target="_blank"

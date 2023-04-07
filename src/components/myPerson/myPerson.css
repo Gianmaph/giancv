@@ -27,7 +27,12 @@
 .title .sub {
   color: rgb(28, 85, 184);
   font-size: 1.1rem;
-  transition: all 0.3s;
+  transition: all 1s;
+  opacity: 0;
+}
+
+.sub.show {
+  opacity: 1;
 }
 
 .title .social {
