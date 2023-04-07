@@ -1,12 +1,14 @@
+import { useState } from "react";
 import styles from "./styles.module.scss";
 
 const JobElement = ({ data }) => {
+  const [count, setCount] = useState(0);
   return (
     <>
       {data.map((i) => (
         <div className={styles.section} key={i}>
           <div className={styles.imgSection}>
-            <div className={styles.order}>{i.id}</div>
+            <div className={styles.order}>{count}</div>
             <div className={styles.content}>
               <p className={styles.title}>{i.company}</p>
               {i.img != "" ? (
